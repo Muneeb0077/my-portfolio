@@ -233,7 +233,7 @@ export const projects = [
       "Firebase Storage",
     ],
     category: "Android App",
-    github: "https://github.com/Muneeb0077",
+    github: "https://play.google.com/store/apps/details?id=com.muneebasif.wall_magic",
   },
   {
     id: 2,

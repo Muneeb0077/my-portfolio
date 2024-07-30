@@ -220,7 +220,7 @@ const Hero = () => {
                   <motion.div {...headContentAnimation}>
                   <SubTitle>{Bio.description}</SubTitle>
                   </motion.div>
-                  <ResumeButton href="https://drive.google.com/file/d/1lI72vLA17cwdnXYFsUqk3dH_rKDZR1Oh/view?usp=drive_link" target="_blank">Check Resume</ResumeButton>
+                  <ResumeButton href="https://drive.google.com/file/d/1HiBGBbpHyPaUn_wjZP3JfLu417WSRkmw/view?usp=sharing" target="_blank">Check Resume</ResumeButton>
                 </HeroLeftContainer>
                 <HeroRightContainer>
                     <motion.div {...headContentAnimation}>
