@@ -6,7 +6,7 @@ import Ecommerce from "../images/Ecommerce.png";
 import Notes from "../images/Notes.png";
 import News from "../images/News.png";
 import Text from "../images/Text.png";
-
+import PromptCommunity from "../images/PromptCommunity.png";
 
 export const Bio = {
   name: "Muneeb Asif",
@@ -284,12 +284,19 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Muneeb0077/textutils",
   },
+  {
+    id: 5,
+    title: "PromptCommunity",
+    date: "July 2024 - August 2024",
+    description:
+      "🚀 Exciting News! 🚀I’m thrilled to share that I’ve just launched PromptCommunity – a full- stack web application crafted with Next.js, MongoDB, and NextAuth for seamless Google authentication. 🌐✨PromptCommunity is designed to foster a vibrant community where users can:Upload and Share AI Prompts 📝Search for Prompts 🔍View and Manage Your Profile 👤Explore Other Users' Contributions 🌟Inspired by JS Mastery’s YouTube projects, I ventured into the world of Next.js and built this app from scratch.Leveraging Next.js's powerful features such as server-side rendering and static generation, I incorporated a unique design and added functionalities like tag, search and profile management. The learning journey has been immense and incredibly rewarding!Join us in creating a hub where everyone can contribute and benefit from innovative AI prompts.Dive in and explore the power of community - driven creativity! 🚀. App is fully responsive as well.",
+image: PromptCommunity,
+  tags: [
+    "Next Js",
+    "MongoDb",
+  ],
+    category: "web app",
+      github: "https://promptcommunity-blue.vercel.app/",
+  },
 ];
 
-export const TimeLineData = [
-  { year: 2020, text: "Started my journey" },
-  { year: 2021, text: "Honing my Mern stack skills with tutorials and projects" },
-  { year: 2022, text: "Joined IEEE Robotics and Automation society Comsats to Implement MERN Stack skills. " },
-  { year: 2023, text: "Shared my projects with the through LINKEDIN" },
-  { year: 2024, text: "Started my Flutter journey bu building a wallpaper app and publishing it on Google Play Store" },
-];
