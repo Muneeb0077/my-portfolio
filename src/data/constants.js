@@ -7,6 +7,7 @@ import Notes from "../images/Notes.png";
 import News from "../images/News.png";
 import Text from "../images/Text.png";
 import PromptCommunity from "../images/PromptCommunity.png";
+import ApnaBank from "../images/ApnaBank.png";
 
 export const Bio = {
   name: "Muneeb Asif",
@@ -297,6 +298,22 @@ image: PromptCommunity,
   ],
     category: "web app",
       github: "https://promptcommunity-blue.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Apna Bank",
+    date: "June 2024 - June 2024",
+    description:
+      "🚀 Just Completed: Apna Bank - A Full-Scale Cash Transaction System! 🚀Excited to share our latest project for the System Design and Architecture course: Apna Bank. The focus was on professional documentation, and we took on the challenge of coding the entire system in just 24 hours! Tech Stack: Frontend: HTML, CSS, JavaScript Backend: Node.js and Mongodb Focus: Secure authentication & imaginative UI design We built a modern, user-friendly interface and robust cash transaction functionalities while sharpening our HTML/CSS skills and mastering Node.js. This project provided an intense, hands-on experience in system design, combining technical precision with creative UI work. Looking forward to applying these skills in future endeavors!",
+image: ApnaBank,
+  tags: [
+    "Html",
+    "Css",
+    "Javascript",
+    "MongoDb",
+  ],
+    category: "web app",
+      github: "https://github.com/Muneeb0077/BankSystem",
   },
 ];
 
