@@ -1,6 +1,8 @@
 import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Container = styled.div`
   display: flex;
@@ -113,20 +115,41 @@ const ContactInputMessage = styled.textarea`
 
 const Contact = () => {
   const form = useRef();
+  const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true);
     emailjs.sendForm(
       'service_9o9pakd', 
       'template_knxlpln',
       form.current,
       'OMPkRFZZjUaZp-2Q4' 
     ).then((result) => {
-      alert('Message Sent Successfully');
+      setSubmitting(false);
+      toast.success("Your message has been sent successfully!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
       form.current.reset(); 
     }, (error) => {
-      alert('Failed to send message, please try again later');
+      setSubmitting(false);
+      toast.error("Failed to send message, please try again later", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
       console.error('Error:', error);
+     
     });
   };
 
@@ -143,7 +166,7 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" required />
           <ContactInput placeholder="Subject" name="subject" required />
           <ContactInputMessage placeholder="Message" name="message" rows={4} required />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value={submitting?"Submitiing...":"Send"} disabled={submitting} />
         </ContactForm>
       </Wrapper>
     </Container>

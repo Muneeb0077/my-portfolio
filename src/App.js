@@ -9,6 +9,8 @@ import StyledStarCanvas from './components/canvas/Stars';
 import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -38,6 +40,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
      <Navbar/>
+     <ToastContainer />
      <Body>
       <StyledStarCanvas />
      <div>
